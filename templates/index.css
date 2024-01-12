@@ -1,0 +1,178 @@
+<!-- (c) Layout created by Skell (https://layouts.spacehey.com/layout?id=32406) -->
+
+<style>
+
+/* Coded by Skell (spacehey.com/skellfriend) */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=VT323&display=swap');
+
+* {
+cursor: url(https://cur.cursors-4u.net/games/gam-3/gam224.cur), auto !important;
+}
+
+body {
+background-image: url('https://ninjacoder58.neocities.org/Hip%20Hop%20Images.html/Flashlight%203/fire%20pit.gif'), url('https://ninjacoder58.neocities.org/Hip%20Hop%20Images.html/Flashlight%203/fire%20pit.gif'), url('https://oldschool.runescape.wiki/images/Login_background_%28default%29.jpg?da769');
+background-repeat: no-repeat;
+background-position: 100% 30%, 0 30%, center;
+background-size: 18% auto, 18% auto, 100% auto;
+background-attachment: fixed;
+}
+
+p {
+font-family: 'VT323', monospace;
+font-size: 20px;
+}
+
+a {
+color: gold;
+}
+
+.top {
+  color: transparent !important;
+  height: 0 !important;
+  background-color: transparent !important;
+}
+    
+.top .left {
+  display: none !important;
+}
+
+
+.top .right {
+  display: none !important;
+}
+    
+.top .center {
+  display: none !important;
+}
+
+.top a {
+   color: transparent !important;
+}
+    
+.search-wrapper {
+   display: none !important;
+}
+    
+.logout-btn {
+  display: none !important;
+}
+
+
+nav .links {
+background-color: gray;
+border: black 4px solid;
+border-radius: 15%;
+margin: 10px;
+
+}
+
+nav .links a {
+font-size: .8em;
+padding: .5em;
+
+}
+
+main {
+background: transparent;
+margin: 10px auto;
+}
+
+
+.general-about .profile-pic img {
+margin: 5px;
+max-height: 150px;
+max-width: 150px;
+}
+
+.url-info, .contact, .mood, .general-about, .blog-preview, .blurbs, .friends, .table-section {
+background-color: gray;
+border-radius: 5%;
+border: black 4px solid;
+margin: 10px auto;
+padding: 25px;
+}
+
+.profile .url-info, .profile .contact {
+border: black 4px solid;
+}
+
+.profile .blurbs .section h4{
+color: gold;
+}
+
+h1 {
+background-color: #D01D00;
+font-family: 'Cinzel', serif;
+text-align: center;
+border: 2px gold dotted;
+}
+
+h4 {
+font-family: 'Cinzel', serif;
+}
+
+.profile .contact .heading, .blog-preview h4, .profile .blurbs .heading, .profile .friends .heading, .profile .table-section .heading{
+background-color: #D01D00;
+text-align: center;
+font-family: 'Cinzel', serif;
+color: gold;
+border: 2px dotted gold;
+}
+
+.profile .table-section {
+background-color: gray;
+border: black 4px solid;
+
+}
+
+
+.profile .table-section td {
+background-color: gray;
+border: 2px solid black;
+color: gold;
+}
+
+
+#comments .inner {
+  height: 1000px;
+  overflow: auto;
+}
+    
+#comments > div.inner:nth-child(2) > p:first-child > b:first-child {
+  font-family: Times New Roman;
+  color: #000;
+}
+
+ 
+.comments-table td * {
+        font-family: Times New Roman;
+        color: gold;
+}
+
+.profile .comments-table td {
+border: black solid 2px;
+font-family: Times New Roman;
+background-color: gray;
+}
+
+.contact .inner a img {font-size: 0;}
+.contact .inner a img:before {font-size: 1em; display: block}
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a:before {content: "" url('https://oldschool.runescape.wiki/images/Emotes_button.png?2212b');}
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a:before {content: "" url('https://oldschool.runescape.wiki/images/Blow_Kiss_emote_icon.png?e229d&20181107053040');}
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a:before {content: "" url('https://oldschool.runescape.wiki/images/Thief_Guard.png?26da6');}
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a:before {content: "" url('https://oldschool.runescape.wiki/images/Thief_Cave_goblin.png?4e47a');}
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a:before {content: "" url('https://oldschool.runescape.wiki/images/Hitpoints_icon.png?a4819');}
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a:before {content: "" url('https://oldschool.runescape.wiki/images/Skull_%28status%29_icon.png?fa6d8');}
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a:before {content: "" url('https://oldschool.runescape.wiki/images/Hybrid.png?a8814');}
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a:before {content: "" url('https://oldschool.runescape.wiki/images/Weight_icon.png?9e192');
+}
+
+footer {
+background-color: gray;
+margin: 10px;
+color: black;
+}
+
+
+</style>
