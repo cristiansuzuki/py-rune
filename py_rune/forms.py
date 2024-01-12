@@ -4,7 +4,7 @@ from .models import *
 class UsernameForm(forms.ModelForm):
     class Meta:
         model = Username
-        fields = ('nick')
+        fields = ('nick',)
         widgets = {
-            'nick':forms.TextInput(attrs={'type': 'text', 'class': 'form-control form-control-user', 'id': 'exampleFirstName', 'placeholder': 'Nickname'})
+            'nick' : forms.TextInput(attrs={'type': 'text', 'class': 'form-control form-control-user', 'id': 'exampleFirstName', 'placeholder': 'Nickname'})
         }

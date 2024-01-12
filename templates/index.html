@@ -4,6 +4,12 @@
     <link href="{% static 'css/index.css' %}" rel="stylesheet">
     <body>
         <h1>TESTE</h1>
+
+        <form method="POST"> {% csrf_token %}
+            <div class="form-group" style="background: black;">
+                {{ form.username }}
+            </div>
+        </form>
     </body>
 </head>
 </html>
