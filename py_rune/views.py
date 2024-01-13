@@ -21,4 +21,4 @@ def index(request):
         form = UsernameForm()
         data = ()
 
-    return render(request,'index.html', {'form': form, 'data': data, 'attack': attack})
+    return render(request,'index.html', {'form': form, 'data': data, 'attack': attack, 'strength': strength, 'defense': defense, 'ranged': ranged, 'magic': magic, })

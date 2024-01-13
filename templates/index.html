@@ -6,12 +6,36 @@
 
         <form method="POST">{% csrf_token %}
             <div class="form-group">  
-                <h3>Insira seu usuario</h3>   
+                <h1>Insira seu usuario</h1>   
                 {{ form.nick }}
             </div>
             {% if attack %}
             <div>
-               <h1>Attack Level</h1> {{ attack }}
+               <h3>Attack Level {{ attack }}</h3> 
+            </div>
+            {% endif %}
+
+            {% if strength %}
+            <div>
+               <h3>Strength Level {{ strength }}</h3> 
+            </div>
+            {% endif %}
+
+            {% if defense %}
+            <div>
+               <h3>Defense Level {{ defense }}</h3> 
+            </div>
+            {% endif %}
+
+            {% if ranged %}
+            <div>
+               <h3>Ranged Level {{ ranged }}</h3> 
+            </div>
+            {% endif %}
+
+            {% if magic %}
+            <div>
+               <h3>Magic Level {{ magic }}</h3> 
             </div>
             {% endif %}
             <button type="submit" class="btn btn-primary btn-user btn-block">ENVIAR</button>
