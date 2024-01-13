@@ -9,6 +9,11 @@
                 <h3>Insira seu usuario</h3>   
                 {{ form.nick }}
             </div>
+            {% if attack %}
+            <div>
+               <h1>Attack Level</h1> {{ attack }}
+            </div>
+            {% endif %}
             <button type="submit" class="btn btn-primary btn-user btn-block">ENVIAR</button>
         </form>
     </body>
