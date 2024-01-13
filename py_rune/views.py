@@ -8,16 +8,24 @@ def index(request):
     if request.method == 'POST': #verificar se o form foi comitado
         form = UsernameForm(request.POST)
         if form.is_valid():
-            
+            print("form valido")
             data = Hiscores(form.cleaned_data['nick'])
-            attack = data.skill('attack', 'level')
-            strength = data.skill('strength', 'level')
-            defense = data.skill('defense', 'level')
-            ranged = data.skill('ranged', 'level')
-            magic = data.skill('magic', 'level')
-            print(attack,defense,strength,ranged,magic)
-            form.save()
-    else:
+            if data.status==200:
+                attack = data.skill('attack', 'level')
+                strength = data.skill('strength', 'level')
+                defense = data.skill('defense', 'level')
+                ranged = data.skill('ranged', 'level')
+                magic = data.skill('magic', 'level')
+
+                form.save()
+            else:
+                attack = ('Usuario nao encontrado')
+                strength = ('Usuario nao encontrado')
+                defense = ('Usuario nao encontrado')
+                ranged = ('Usuario nao encontrado')
+                magic = ('Usuario nao encontrado')
+
+    else:       
         form = UsernameForm()
         data = ()
 
