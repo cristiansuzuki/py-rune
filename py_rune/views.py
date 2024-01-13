@@ -8,5 +8,7 @@ def index(request):
         form = UsernameForm(request.POST)
         if form.is_valid():
             form.save()
+    else:
+        form = UsernameForm()
 
-    return render(request,'index.html')
+    return render(request,'index.html', {'form': form})
