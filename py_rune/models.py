@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Username(models.Model):
-    nick = models.CharField(max_length=30)
+    nick = models.CharField(max_length=30, default='redduckz')
 
     def __str__(self):
         return self.nick
