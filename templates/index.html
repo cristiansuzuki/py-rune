@@ -1,45 +1,72 @@
 {% load static %}
-<html>
-<head>
-    <link href="{% static 'css/index.css' %}" rel="stylesheet">
-    <body>
 
-        <form method="POST">{% csrf_token %}
-            <div class="form-group">  
-                <h1>Insira seu usuario</h1>   
-                {{ form.nick }}
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runescape</title>
+    <link href="{% static './css/style.css' %}" rel="stylesheet"> 
+</head>
+
+<body>
+
+<main>    
+   <div class="background">
+    <div class="center-container">
+        <form id="input" method="POST">{% csrf_token %}
+            {{ form.nick }}
+
             {% if attack %}
             <div>
-               <h3>Attack Level {{ attack }}</h3> 
+               <h3>Attack Level: {{ attack }}</h3> 
             </div>
             {% endif %}
 
             {% if strength %}
             <div>
-               <h3>Strength Level {{ strength }}</h3> 
+               <h3>Strength Level: {{ strength }}</h3> 
             </div>
             {% endif %}
 
             {% if defense %}
             <div>
-               <h3>Defense Level {{ defense }}</h3> 
+               <h3>Defense Level: {{ defense }}</h3> 
             </div>
             {% endif %}
 
             {% if ranged %}
             <div>
-               <h3>Ranged Level {{ ranged }}</h3> 
+               <h3>Ranged Level: {{ ranged }}</h3> 
             </div>
             {% endif %}
 
             {% if magic %}
             <div>
-               <h3>Magic Level {{ magic }}</h3> 
+               <h3>Magic Level: {{ magic }}</h3> 
             </div>
             {% endif %}
-            <button type="submit" class="btn btn-primary btn-user btn-block">ENVIAR</button>
+
+            <button type="submit">
+                ENVIAR
+            </button>
         </form>
-    </body>
-</head>
+    </div>
+   </div>
+</main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var input = document.getElementById('input');
+      
+        input.addEventListener('keyup', function (event) {
+          if (event.key === 'Enter') {
+            alert('Você pressionou Enter!');
+          }
+        });
+      });
+</script>
+
+
+</body>
 </html>
