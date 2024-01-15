@@ -16,7 +16,6 @@ def index(request):
                 ranged = data.skill('ranged', 'level')
                 magic = data.skill('magic', 'level')
             else:
-                print('nao existeeeeeeeeeeeeeeeeeeeeee')
                 attack = ('Usuario nao encontrado')
                 strength = ('Usuario nao encontrado')
                 defense = ('Usuario nao encontrado')
