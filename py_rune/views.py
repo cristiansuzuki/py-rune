@@ -5,6 +5,11 @@ from OSRSBytes import Hiscores
 # Create your views here.
 
 def index(request):
+    attack = ''
+    strength = ''
+    defense = ''
+    ranged = ''
+    magic = ''
     if request.method == 'POST': #verificar se o form foi comitado
         form = UsernameForm(request.POST)
         if form.is_valid():
